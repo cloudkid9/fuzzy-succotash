@@ -1,6 +1,17 @@
 import twitter
+import argparse 
 
-print("You are here forever.")
+parser = argparse.ArgumentParser(description="The ting for the twitter")
+parser.add_argument('--name', help='foo help')
+
+args = parser.parse_args()
+
+name = args.name
+if not name:
+    name = "anonimoose"
+
+
+print("You are here forever %s." % args.name)
 # api = twitter.Api(consumer_key='consumer_key',
 #     consumer_secret='consumer_secret',
 #     access_token_key='access_token',
