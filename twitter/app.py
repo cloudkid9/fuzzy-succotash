@@ -11,7 +11,10 @@ if not name:
     name = "anonimoose"
 
 
-print("You are here forever %s." % args.name)
+print("%s works at the Nucleon Plant." % args.name.upper())
+
+
+# TODO: Twitter app
 # api = twitter.Api(consumer_key='consumer_key',
 #     consumer_secret='consumer_secret',
 #     access_token_key='access_token',
